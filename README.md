@@ -5,6 +5,8 @@
 # Demo SignalR 001
 An ASP.NET Core SignalR with TypeScript and Webpack targeting [CF (Cloud Foundry)][CloudFoundryURL].
 
+![Demo Snapshot SignalR App](docs/images/snapshot.png)
+
 ## Develop
 The application follows the instructions as outlined in article [Use ASP.NET Core SignalR with TypeScript and Webpack][MSDOCS1]. The additional work added include folder structure, CF files, and deployment scrpits.
 
