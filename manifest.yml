@@ -1,0 +1,9 @@
+---
+applications:
+- name: demo-signalr-dnc001
+  buildpack: dotnet_core_buildpack
+  memory: 128M
+  disk_quota: 256M
+  path: ./bin
+  env:
+    ASPNETCORE_ENVIRONMENT: Development

@@ -1,0 +1,25 @@
+{
+    "name": "task-runner",
+    "version": "0.0.0",
+    "description": "Use this script as a task runner.",
+    "scripts": {
+        "build:ui": "cd src/ui && npm run release",
+        "build:app": "dotnet publish ./src/app -f netcoreapp2.1 -r ubuntu.16.04-x64 -o \"$PWD/bin/\"",
+        "prebuild": "npm run build:ui",
+        "build": " npm run build:app",
+        "prepublish": "npm run build",
+        "publish": "./deploy.sh",
+        "start": "dotnet run --project src/app"
+    },
+    "keywords": [
+        "dotnet",
+        "C#",
+        "ASP.NET Core",
+        "SignalR",
+        "TypeScript",
+        "Webpack",
+        "bash"
+    ],
+    "author": "Wael Rabadi",
+    "license": "ISC"
+}
