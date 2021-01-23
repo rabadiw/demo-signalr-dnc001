@@ -1,13 +1,13 @@
 using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;
 
-
-namespace SignalR001.Hubs
+namespace signalr_dnc001.Hubs
 {
     public class ChatHub : Hub
     {
-        public async Task NewMessage(string username, string message){
-            await Clients.All.SendAsync("messageReceived", username, message);
+        public async Task SendMessage(string username, string message)
+        {
+            await Clients.All.SendAsync("ReceiveMessage", username, message);
         }
     }
 }
